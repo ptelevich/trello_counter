@@ -1,0 +1,23 @@
+{
+   "browser_action": {
+      "default_icon": "icon48.png",
+      "default_popup": "default_page.html",
+      "default_title": "Counter for Trello"
+   },
+   "content_scripts": [ {
+      "js": [ "chrome_trello.js" ],
+      "matches": [ "https://trello.com/*" ]
+   } ],
+   "description": "Extension count cards in list",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjVTK9k69QjOrXjMKzPJYoHg5ZaTDM1dGZrs6mDDF90Tf8Kme7jjDcACp3nkjFeTmSTh6l7E8Hl71RKGy/Jck+/QSzi2SRVhaQMZoKs51GJ0kwPs48xcjuQsfZABGJBfaGXruZ6TjNAzFX/krZww669PGacO4lkufM4tuyyHaKH0YyJPojNpHRQRFadCFwEzo8nN18s24bDaoYlN02k0q1qDcKvRf9HV6JRykTGNKsXOJtLGJKhet7C0OLMNgVZeMDmvTZGoukKR0cbJC+6RA/pP3xzkAKr7ZYRQ7KdgUG+6WUVP+kVPEISegz+htTo+LoSLZupzAYGhJF6Eks42b5QIDAQAB",
+   "manifest_version": 2,
+   "name": "Counter for Trello by Pavel",
+   "permissions": [ "activeTab", "tabs", "https://trello.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.2"
+}
